@@ -1,0 +1,20 @@
+branch-defaults:
+  aws-eb-deploy:
+    environment: production
+  master:
+    environment: production
+    group_suffix: null
+global:
+  application_name: jobs-platform
+  branch: null
+  default_ec2_keyname: jobs-platform
+  default_platform: Ruby 2.6 (Puma)
+  default_region: eu-central-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: git
+  workspace_type: Application
