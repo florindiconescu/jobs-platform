@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: jobs_platform_production
-  username: jobs_platform
-  password: <%= ENV['JOBS_PLATFORM_DATABASE_PASSWORD'] %>
+  database: <%= ENV['RDS_DATABASE'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOST'] %>
+  port: 5432
